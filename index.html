@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./hw-1/style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      src="https://unpkg.com/react@18.2.0/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script type="text/babel">
+      const card = React.createElement(
+        "div",
+        {
+          className: "card",
+        },
+        React.createElement("h2", { className: "cardTitle" }, "Card"),
+        React.createElement("p", { className: "line" }),
+        React.createElement(
+          "p",
+          { className: "card-text" },
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fuga quod eaque, id porro veritatis tempore? Cupiditate enim omnis nisi, ut magni quae saepe aspernatur voluptatum quasi sapiente architecto tenetur!"
+        ),
+        React.createElement("button", { className: "next-btn" }, "Next")
+      );
+
+      const cardSecond = React.createElement(
+        "div",
+        { className: "cardSecond" },
+        React.createElement("h2", { className: "card-second-sub" }, "subtitle"),
+        React.createElement("h1", { className: "card-second-title" }, "Array"),
+        React.createElement(
+          "p",
+          { className: "card-second-text" },
+          "Apply Transform Over Each Element Array"
+        )
+      );
+
+      const button = React.createElement(
+        "button",
+        { className: "button" },
+        "BUTTON"
+      );
+
+      const form = React.createElement(
+        "div",
+        { className: "form" },
+        React.createElement(
+          "div",
+          null,
+          React.createElement("label", null, "Enter your name:"),
+          React.createElement("input", { type: "text" })
+        ),
+        React.createElement(
+          "div",
+          null,
+          React.createElement("label", null, "Enter your email:"),
+          React.createElement("input", { type: "text" })
+        ),
+
+        React.createElement("button", {className: "subs-btn"}, "Subscribe!")
+      );
+
+      const container = document.querySelector("#root");
+      const root = ReactDOM.createRoot(container);
+      root.render(
+        React.createElement("div", null, card, cardSecond, button, form)
+      );
+    </script>
+  </body>
+</html>

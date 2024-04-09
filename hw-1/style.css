@@ -1,0 +1,64 @@
+.card {
+    background-color: blue;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .cardTitle {
+    color: white;
+  }
+  
+  .card-text {
+    color: white;
+  }
+  
+  .line {
+    border: 1px solid red;
+  }
+  
+  .next-btn {
+    background-color: red;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+    padding: 10px 50px;
+  }
+  
+  .cardSecond {
+    margin-top: 30px;
+    background-color: brown;
+    width: 300px;
+    padding: 20px;
+  }
+  
+  .card-second-sub {
+    color: paleturquoise;
+  }
+  
+  .button {
+    margin-top: 30px;
+    background-color: blueviolet;
+    width: 200px;
+    height: 100px;
+    font-weight: 900;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+  }
+  
+  .subs-btn {
+    width: 150px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
